@@ -10,18 +10,21 @@ import BackToTop from './components/BackToTop/BackToTop';
 import Footer from './components/Footer/Footer';
 
 import './global.css'
+import Header from './components/Header/Header';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>
-      <main className='bg-red-600 '>
-        <div className="star-field">
-          <div className="layer"></div>
-          <div className="layer"></div>
-          <div className="layer">
-          </div>
+      {/* BACKGROUND ESTRELADO */}
+      <div className="star-field z-[-10] ">
+        <div className="layer"></div>
+        <div className="layer"></div>
+        <div className="layer">
         </div>
-
+      </div>
+      <main className='relative z-10'>
+        
+        <Header />
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/*" element={<ErrorPage />} />

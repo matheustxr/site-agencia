@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/*ANIMAÇÃO BG*/
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #000;
     overflow-x: hidden;
@@ -11,7 +17,7 @@ body {
 html {
     font-family: "Poppins", sans-serif;
 }
-
+/*ANIMAÇÃO BG*/
 .bg-primary {
     --tw-bg-opacity: 1;
     background-color: rgb(0 4 15 / var(--tw-bg-opacity));
@@ -33,10 +39,6 @@ html {
     border-radius: 999px;
     filter: drop-shadow(0 0 6px #699bff);
     animation: tail 3s ease-in-out infinite, falling 3s ease-in-out infinite;
-}
-
-.text-white {
-    color: #fff;
 }
 
 @keyframes tail {
@@ -103,7 +105,7 @@ html {
     animation-delay: 1s;
 }
 
-.star:nth-child(1)::before,
+.star:nth-child(1)::before, 
 .star:nth-child(1)::after {
     animation-delay: 1s;
 }
@@ -186,6 +188,7 @@ html {
         opacity: 0.5;
     }
 }
+
 @keyframes sf-fly-by-2 {
     from {
         transform: translateZ(-1200px);
@@ -196,6 +199,7 @@ html {
         opacity: 0.5;
     }
 }
+
 @keyframes sf-fly-by-3 {
     from {
         transform: translateZ(-1800px);
@@ -206,6 +210,7 @@ html {
         opacity: 0.5;
 }
 }
+
 .star-field {
     position: fixed;
     top: 0;
@@ -216,8 +221,9 @@ html {
     -webkit-perspective: 600px;
     z-index: 0;
 }
+
 .star-field .layer {
-box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc,
+    box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc,
         -91px -235px #d4d4d4, 491px -460px #f7f7f7, 892px -128px #f7f7f7,
         758px -277px #ededed, 596px 378px #cccccc, 647px 423px whitesmoke,
         183px 389px #c7c7c7, 524px -237px #f0f0f0, 679px -535px #e3e3e3,
@@ -259,20 +265,19 @@ box-shadow: -411px -476px #cccccc, 777px -407px #d4d4d4, -387px -477px #fcfcfc,
     width: 4px;
     border-radius: 2px;
 }
+
 .star-field .layer:nth-child(1) {
     animation: sf-fly-by-1 5s linear infinite;
 }
+
 .star-field .layer:nth-child(2) {
     animation: sf-fly-by-2 5s linear infinite;
 }
+
 .star-field .layer:nth-child(3) {
     animation: sf-fly-by-3 5s linear infinite;
 }
-
-#sliderClients .slick-prev:before,
-#sliderClients .slick-next:before {
-    display: none;
-}
+/* FINAL BACKGROUND */
 
 .text-gradient {
     background: radial-gradient(
