@@ -8,32 +8,18 @@ import { NavLink } from "react-router-dom";
 function NavList() {
   return (
     <ul className="pt-5  flex flex-col md:flex-row md:items-center gap-5">
+
+      <NavLink to="/" className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all">
+        Home
+      </NavLink>
+
       <NavLink to="/sobre" className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all">
         Sobre
       </NavLink>
 
-      <NavLink to="/servicos/audiovisual" className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all">
-        Studios Bmouse
+      <NavLink to="/sobre" className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all">
+        Nossos Trabalhos
       </NavLink>
-
-      <a 
-        href="https://bmouseproductions.com/view/atendimento/nossos-trabalhos/"
-        className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all"
-      >
-        Nossos trabalhos
-      </a>
-
-      <NavLink to="/servicos" className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all">
-        Serviços
-      </NavLink>
-
-      <a 
-        href="https://bmouseproductions.com/view/atendimento/trabalhe-conosco/"
-        className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all"
-      >
-        Trabalhe conosco
-      </a>
-
       
       <a
         href="https://bmouseproductions.com/view/atendimento/"
@@ -57,7 +43,7 @@ export default function Header() {
  
   return (
     <Navbar 
-      className="pt-5 mx-auto max-w-[1200px] px-5 py-5 md:pb-10 lg:pb-20 bg-transparent rounded-none border-none" 
+      className="pt-5 mx-auto max-w-[900px] px-5 py-5 md:pb-10 lg:pb-20 bg-transparent rounded-none border-none" 
       placeholder={undefined} 
       onPointerEnterCapture={undefined} 
       onPointerLeaveCapture={undefined}
