@@ -5,12 +5,13 @@ import {BrowserRouter as Router ,Routes, Route, } from "react-router-dom";
 
 import ErrorPage from './pages/Error/ErrorPage';
 import Home from './pages/Home/Home';
+import Sobre from './pages/Sobre/Sobre';
 
-import BackToTop from './components/BackToTop/BackToTop';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import BackToTop from './components/BackToTop/BackToTop';
 
 import './global.css'
-import Header from './components/Header/Header';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -22,12 +23,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <div className="layer">
         </div>
       </div>
+
       <main className='relative z-10'>
-        
         <Header />
         <Routes>
           <Route path="/" element={<Home />}/>
-          <Route path="/sobre" element={<Home />}/>
+          <Route path="/sobre" element={<Sobre />}/>
           <Route path="/nossos-trabalhos" element={<Home />}/>
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
