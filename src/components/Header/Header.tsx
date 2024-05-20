@@ -17,8 +17,12 @@ function NavList() {
         Sobre
       </NavLink>
 
-      <NavLink to="/sobre" className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all">
-        Nossos Trabalhos
+      <NavLink to="/servicos" className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all">
+        Serviços
+      </NavLink>
+
+      <NavLink to="/nossos-trabalhos" className="text-lg md:text-xl hover:!text-[#4bbfed] !font-montserrat cursor-pointer hover:underline decoration-white underline-offset-8 transition-all">
+        Nossos <br className="hidden md:block lg:hidden" /> Trabalhos
       </NavLink>
       
       <a
@@ -43,7 +47,7 @@ export default function Header() {
  
   return (
     <Navbar 
-      className="pt-5 mx-auto max-w-[900px] px-5 py-5 md:pb-10 lg:pb-20 bg-transparent rounded-none border-none" 
+      className="pt-5 mx-auto max-w-[900px] 2xl:max-w-[1100px] px-5 py-5 md:pb-10 lg:pb-20 bg-transparent rounded-none border-none" 
       placeholder={undefined} 
       onPointerEnterCapture={undefined} 
       onPointerLeaveCapture={undefined}

@@ -1,6 +1,6 @@
 
 
-export default function SectionOneServiços() {
+export default function SectionOneTrabalhos() {
     return (
         <section>
             

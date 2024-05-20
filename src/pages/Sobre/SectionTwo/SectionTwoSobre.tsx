@@ -4,11 +4,11 @@ export default function SectionTwoSobre (){
     return (
         <section className="container mx-auto px-5 md:px-10 xl:px-20 py-20">
             <div className="flex flex-col lg:flex-row">
-                <div>
+                <div className="w-full">
                     <img src="" alt="lottie animado" />
                 </div>
             
-                <div className="flex flex-col gap-5 xl:gap-7">
+                <div className="w-full flex flex-col gap-5 xl:gap-7">
                     <div>
                         <span>mini titulo</span>
                         <h2>titulo principal</h2>

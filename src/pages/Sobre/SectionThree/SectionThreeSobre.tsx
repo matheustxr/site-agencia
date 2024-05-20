@@ -3,11 +3,13 @@
 export default function SectionThreeSobre () {
     return (
         <section className="container mx-auto px-5 md:px-10 xl:px-20 py-20">
-            <div className="flex flex-col">
-                <div className="flex flex-col md:flex-row gap-5">
-                    <img src="" alt="foto matheus" />
+            <div className="flex flex-col gap-10">
+                <div className="flex flex-col md:flex-row-reverse gap-5">
+                    <div className="w-full flex justify-center items-center">
+                        <img src="" alt="foto matheus" />
+                    </div>
 
-                    <div>
+                    <div className="w-full">
                         <span>Conheça</span>
                         <h3>
                             Matheus Teixeira
@@ -21,9 +23,11 @@ export default function SectionThreeSobre () {
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-5">
-                    <img src="" alt="foto Rodrigo" />
+                    <div className="w-full flex justify-center items-center">
+                        <img src="" alt="foto Rodrigo" />
+                    </div>
 
-                    <div>
+                    <div className="w-full">
                         <span>Conheça</span>
                         <h3>
                             Rodrigo Alves

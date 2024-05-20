@@ -6,6 +6,8 @@ import {BrowserRouter as Router ,Routes, Route, } from "react-router-dom";
 import ErrorPage from './pages/Error/ErrorPage';
 import Home from './pages/Home/Home';
 import Sobre from './pages/Sobre/Sobre';
+import Serviços from './pages/Serviços/Serviços';
+import Trabalhos from './pages/Trabalhos/Trabalhos';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -29,7 +31,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/sobre" element={<Sobre />}/>
-          <Route path="/nossos-trabalhos" element={<Home />}/>
+          <Route path="/servicos" element={<Serviços />}/>
+          <Route path="/nossos-trabalhos" element={<Trabalhos />}/>
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
         <BackToTop/>
