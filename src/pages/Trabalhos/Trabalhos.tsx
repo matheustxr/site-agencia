@@ -1,12 +1,12 @@
+import Decolar from "../../components/Decolar/Decolar";
 import SectionOneTrabalhos from "./Sections/SectionOne/SectionOneTrabalhos";
-import SectionTwoTrabalhos from "./Sections/SectionTwo/SectionTwoTrabalhos";
 
 
 export default function Trabalhos() {
     return (
         <>
             <SectionOneTrabalhos />
-            <SectionTwoTrabalhos />
+            <Decolar />
         </>
     )
 }
